@@ -238,13 +238,13 @@ format HH:MM:\n""")
                         i.change_priority(int(prio))
 
         if (command == 'deleteevent'):
-            name = input("Input the name of the event you would like to delete:\n")
+            name = input("Input the name of the event to delete:\n")
             for i in events:
                 if i.event_name == name:
                     events.remove(i)
 
         if (command == 'deletetask'):
-            name = input("Task to delete:\n")
+            name = input("Input the name of the task to delete:\n")
             for i in tasks:
                 if i.task_name == name:
                     tasks.remove(i)
@@ -263,7 +263,7 @@ format HH:MM:\n""")
                 print(i.deadline.strftime("Due at: %I:%M %p on %a, %b %d, %y"))
                 print("Priority: {}".format(i.priority))
 
-        command = input("Please input your next command:\n")
+        command = input("Please input your next command (menu for options):\n")
 
     ref_file.close()
     ref_file = open(file_name, 'w')
