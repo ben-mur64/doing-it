@@ -1,1 +1,2 @@
-wb1.txt
+# Ignore workbook files #
+*.wb
